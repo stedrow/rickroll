@@ -1,18 +1,24 @@
 <!DOCTYPE html>
 <html>
-   <body>
-       <video autoplay loop width="100%">
-
-    <source src="rickroll.mp4"
-            type="video/mp4">
-
-    Sorry, your browser doesn't support embedded videos.
-</video>
+   <head>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-6HPN59XYD8"></script>
       <script>
-         // Change the variables below to your liking
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6HPN59XYD8');
+      </script>
+   </head>
+   <body>
+      <video autoplay loop width="100%">
+         <source src="rickroll.mp4"
+            type="video/mp4">
+         Sorry, your browser doesn't support embedded videos.
+      </video>
+      <script>
          const currentURL = "rickroll.mp4";
          const pageTitle = "Loading...";
-         // End of changable variables
          
          function setTitle() {
             document.title = pageTitle;
@@ -28,6 +34,6 @@
          }
          
          window.onload = onload();
-       </script>
+      </script>
    </body>
 </html>
